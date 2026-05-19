@@ -61,7 +61,7 @@ class Profile{
                     break;
 
                 case down:
-                    OG_pointer = min(OG_pointer + 1, 3);
+                    OG_pointer = min(OG_pointer + 1, 4);
                     Player_joystick.set_state();
                     break;
 

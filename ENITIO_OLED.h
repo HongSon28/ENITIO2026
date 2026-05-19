@@ -87,18 +87,6 @@ void CreditsDisplay() {
     display.setCursor(0, 0);
     display.println(F("  ENITIO Tech Team  ")); 
 
-    display.setTextColor(SSD1306_WHITE);
-    display.setTextSize(1); // Draw SIZE
-    display.setCursor(0, 12);
-    display.println("Quan Tran");
-    
-    display.setCursor(0, 22);
-    display.println("Kah Leong");
-    display.setCursor(0, 32);
-    display.println("Siddhangana");
-    display.setCursor(0, 42);
-    display.println("Edmund");
-
     display.setCursor(10, 56);
     display.setTextColor(SSD1306_BLACK, SSD1306_WHITE);
     display.println("(Press to go back)"); 
@@ -423,17 +411,20 @@ class Profile_OLED {
 
       display.setCursor(0, 36);
       switch (OG){
-          case ALATAR:
-            display.println("OG: Alatar ");
-            break;
-          case DRACHEN:
-            display.println("OG: Drachen ");
-            break;
-          case EVA:
-            display.println("OG: Eva ");
-            break;
           case INVICTA:
             display.println("OG: Invicta ");
+            break;
+          case DYNARI:
+            display.println("OG: Dynari ");
+            break;
+          case EPHILIA:
+            display.println("OG: Ephilia ");
+            break;
+          case AKRONA:
+            display.println("OG: Akrona ");
+            break;
+          case SOLARIS:
+            display.println("OG: SOLARIS ");
             break;
         }
 
@@ -458,19 +449,23 @@ class Profile_OLED {
 
       display.setCursor(10, 12);
       
-      display.println("ALATAR");
+      display.println("Invicta");
 
       display.setCursor(10, 22);
       
-      display.println("DRACHEN");
+      display.println("Dynari");
 
       display.setCursor(10, 32);
       
-      display.println("EVA");
+      display.println("Ephilia");
 
       display.setCursor(10, 42);
       
-      display.println("INVICTA");
+      display.println("Akrona");
+
+      display.setCursor(10, 52);
+
+      display.println("SOLARIS");
       
       // prints the cursor to highlight menu items
       display.setCursor(2, (OG_pointer * 10) + 12);
@@ -762,17 +757,20 @@ class TreasureHunt_OLED {
         display.setTextColor(SSD1306_WHITE); // Draw white text      
 
         switch (OG){
-          case ALATAR:
-            display.println("OG: Alatar ");
-            break;
-          case DRACHEN:
-            display.println("OG: Drachen ");
-            break;
-          case EVA:
-            display.println("OG: Eva ");
-            break;
           case INVICTA:
             display.println("OG: Invicta ");
+            break;
+          case DYNARI:
+            display.println("OG: Dynari ");
+            break;
+          case EPHILIA:
+            display.println("OG: Ephilia ");
+            break;
+          case AKRONA:
+            display.println("OG: Akrona ");
+            break;
+          case SOLARIS:
+            display.println("OG: SOLARIS ");
             break;
         }
 
