@@ -21,7 +21,7 @@ class TreasureHuntPlayer
     int MaxHP;
     int En; // energy
     int MaxEn;
-    int MANA;
+    uint8_t MANA;
 
     action_id action;
 
